@@ -553,7 +553,7 @@ void PythonInterpCtrl::OnPyNotify(XmlRpcResponseEvent& event)
 
 void PythonInterpCtrl::OnLineInputRequest(wxCommandEvent& event)
 {
-    m_ioctrl->ProcessEvent(event);
+    m_ioctrl->GetEventHandler()->ProcessEvent(event);
 }
 
 

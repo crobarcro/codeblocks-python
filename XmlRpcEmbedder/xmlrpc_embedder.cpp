@@ -460,7 +460,7 @@ void XmlRpcInstance::OnEndProcess(wxProcessEvent &event)
     m_proc_dead=true;
     wxCommandEvent ce(wxEVT_XMLRPC_PROC_END,0);
     if(m_parent)
-        m_parent->AddPendingEvent(ce);
+        m_parent->GetEventHandler()->AddPendingEvent(ce);
     if(m_jobrunning)
         return;
     CleanupTerminatedProcess();
