@@ -75,6 +75,7 @@
 					<Add option="-Wl,-z,defs" />
 					<Add option="`pkg-config --libs codeblocks`" />
 					<Add library="XmlRpcEmbedder" />
+					<Add library="wx_gtk2u_aui-3.0" />
 				</Linker>
 				<ExtraCommands>
 					<Add after="zip -j9 PythonInterpreter.zip manifest.xml" />
